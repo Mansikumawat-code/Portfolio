@@ -1,0 +1,186 @@
+/* Reset styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Dark Theme */
+body {
+  color: #fff;
+  background-color: #06081f;
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Prevents body scrolling */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 270px;
+  background-color: #1b3c88;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  border: 2px solid #333;
+}
+
+.profile h2 {
+  margin: 10px 0;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  padding: 15px 20px;
+}
+
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-menu ul li a:hover {
+  background-color: #333;
+  padding-left: 25px;
+  transition: all 0.3s;
+}
+
+.social-links {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  background-color: #140349dd;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px;
+}
+
+.scrolling-section {
+  padding: 10px 20px;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 50px;
+}
+
+.section h2 {
+  color: #3a73f9; /* Accent color for headers */
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.section p, .section ul, .section img {
+  font-size: 16px;
+}
+
+/* Languages Styling */
+.languages img {
+  width: 150px;
+  margin: 5px;
+  border: 1px solid #1b3c88;
+  border-radius: 5px;
+}
+
+/* Portfolio Styling */
+.portfolio-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio-item img {
+
+  width: 220px;
+  height: 220px;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+.portfolio-item p {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+/* Background Video */
+.main-content video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Send video behind content */
+  opacity: 0.5; /* Slight transparency for text readability */
+}
+
+/* Glassmorphism Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Fade-In Animation */
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Animation for Portfolio Items */
+.portfolio-item:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover p {
+  color: #fff;
+  transition: color 0.3s ease;
+}
