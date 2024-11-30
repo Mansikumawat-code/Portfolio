@@ -1,7 +1,7 @@
 // Typing Effect for Hero Section
 const heroRole = document.getElementById("heroRole");
 const roles = [
-  "GDG Organizer at PIEMR",
+  "Placement Coordinator at PIEMR",
   "Student Prestige Institute of Engineering Management and Research",
   "Cybersecurity Enthusiast",
   "Web Developer"
